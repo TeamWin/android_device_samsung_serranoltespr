@@ -1,4 +1,4 @@
-DEVICE_TREE := device/samsung/serranoltexx
+DEVICE_TREE := device/samsung/serranoltespr
 
 CM_PLATFORM_SDK_VERSION := 7	# Required for libf2fs.so
 override TARGET_OUT_VENDOR_SHARED_LIBRARIES = $(TARGET_OUT_SHARED_LIBRARIES)
@@ -29,7 +29,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8930-common
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CONFIG := samsung_serrano_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_eur_lte_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_spr_defconfig
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 
 # Boot image
@@ -75,8 +75,3 @@ TW_EXCLUDE_SUPERSU := true
 
 # Encryption support
 TW_INCLUDE_CRYPTO := true
-
-# Init properties from bootloader version, ex. model info
-TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_serranolte
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_TREE)/init/init_serranolte.cpp

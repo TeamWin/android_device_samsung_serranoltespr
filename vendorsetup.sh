@@ -1,2 +1,2 @@
-add_lunch_combo omni_serranoltexx-eng
-add_lunch_combo omni_serranoltexx-userdebug
+add_lunch_combo omni_serranoltespr-eng
+add_lunch_combo omni_serranoltespr-userdebug
